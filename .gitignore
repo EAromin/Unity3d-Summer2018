@@ -79,3 +79,9 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Tensorflow Sharp Files
+ML-Agent-Project0/Assets/ML-Agents/Plugins/Android/*
+ML-Agent-Project0/Assets/ML-Agents/Plugins/iOS/*
+ML-Agent-Project0/Assets/ML-Agents/Plugins/Computer/*
+ML-Agent-Project0/Assets/ML-Agents/Plugins/System/*
