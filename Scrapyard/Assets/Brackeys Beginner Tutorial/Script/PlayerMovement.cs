@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	//you want fixedupdate for physics relatedstuff
 	void FixedUpdate () {
-		rb.AddForce (0,0,speed * Time.deltaTime);
+		//rb.AddForce (0,0,speed * Time.deltaTime);
 		InputFeedback ();
 		if (rb.position.y < -1f) {
 			FindObjectOfType<GameManager> ().EndGame ();

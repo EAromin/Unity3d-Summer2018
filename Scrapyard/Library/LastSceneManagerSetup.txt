@@ -1,1 +1,4 @@
-sceneSetups: []
+sceneSetups:
+- path: Assets/Brackeys Beginner Tutorial/Lv3.unity
+  isLoaded: 1
+  isActive: 1
