@@ -886,7 +886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64c06d72b923d5e428d74983faa57562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chunkDistance: 90
+  chunkDistance: 70
   chunks:
   - {fileID: 1959695198498850, guid: 53b2bc58f2dbc804eae692df9d0a2f46, type: 2}
   - {fileID: 1054584063145618, guid: c56a9e4848f19074a886dd1e3eed604f, type: 2}
