@@ -69,7 +69,7 @@ public class RollerAgent : Agent
 		}
 
 		//time penalty 
-		AddReward (-0.05f);
+		AddReward (-0.15f);
 
 		//falls off
 		if (this.transform.position.y < -1.0f) {
