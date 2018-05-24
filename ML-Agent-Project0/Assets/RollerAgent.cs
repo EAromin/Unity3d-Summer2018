@@ -45,6 +45,7 @@ public class RollerAgent : Agent
 		AddVectorObs (this.transform.position.z / 5);
 		AddVectorObs (rb.velocity.x/5);
 		AddVectorObs (rb.velocity.z/5);
+
 	}
 
 	//actions. The vecor size depends on the different possible decisions that a brain can execute at runtime. Left,Right,Jump? size=3
