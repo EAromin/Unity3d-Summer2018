@@ -5,10 +5,14 @@ public class PlayerControl : MonoBehaviour {
 	public float speed = 2f;
 	public Rigidbody2D rb;
 	float x,y;
+	public Arrow arr;
 	// Update is called once per frame
 
 	void Update(){
-		rotateToMouse ();
+		if (!arr.fired) {
+			rotateToMouse ();
+		} 
+
 	}
 	void FixedUpdate () {
 		ProcessInput ();
