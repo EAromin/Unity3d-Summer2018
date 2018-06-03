@@ -6,6 +6,9 @@ public class PlayerControl : MonoBehaviour {
 	public Rigidbody2D rb;
 	float x,y;
 	public Arrow arr;
+	public Rope rope;
+	public float jumpForce = 5f;
+	public bool grounded = true;
 	// Update is called once per frame
 
 	void Update(){
@@ -20,11 +23,43 @@ public class PlayerControl : MonoBehaviour {
 
 	void ProcessInput(){
 		
-		y =   Input.GetAxisRaw("Vertical");
 		x =   Input.GetAxisRaw("Horizontal");
 
-		Vector2 newVel = Vector2.ClampMagnitude (new Vector2 (x, y), 1) * speed;
-		rb.velocity = newVel;
+
+		if (Input.GetKey ("space") && grounded) {
+			rb.velocity += new Vector2(0,jumpForce);
+			grounded = false;
+
+			if(x!= 0){
+			if (arr.fired && arr.rb.constraints == RigidbodyConstraints2D.FreezeAll) {
+				arr.fired = false;
+				arr.rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+				rope.fired = false;
+				foreach (Transform child in rope.transform)
+					Destroy (child.gameObject);
+				//arr.rb.velocity =  -(transform.up *arr.shootPower);
+				}}
+			}
+		if (x != 0)
+			rb.velocity += new Vector2 (x, 0);
+		else if (x == 0) {		
+			
+			if (rb.velocity.x > 0) {
+				if(rb.velocity.x <= 0.1f)
+					rb.velocity = new Vector2 (0f, rb.velocity.y);
+				else
+					rb.velocity += new Vector2 (-.2f, 0);
+			} else if (rb.velocity.x < 0) {
+				if(rb.velocity.x >= -0.1f)
+					rb.velocity = new Vector2 (0f, rb.velocity.y);
+				else
+					rb.velocity += new Vector2 (.2f, 0);
+			}
+			
+		}
+		rb.velocity = new Vector2 (Mathf.Clamp (rb.velocity.x, -speed, speed), rb.velocity.y);
+		Debug.Log (rb.velocity);
 
 	}
 

@@ -54,14 +54,14 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.2
+  m_Mass: 0.3
   m_LinearDrag: 0.1
-  m_AngularDrag: 0.1
+  m_AngularDrag: 0.2
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!58 &58839685900204072
 CircleCollider2D:
@@ -137,7 +137,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0}
-  m_ConnectedAnchor: {x: 0, y: 0.2}
+  m_ConnectedAnchor: {x: 0, y: 0.4}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -145,4 +145,4 @@ HingeJoint2D:
   m_UseLimits: 0
   m_AngleLimits:
     m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_UpperAngle: 0

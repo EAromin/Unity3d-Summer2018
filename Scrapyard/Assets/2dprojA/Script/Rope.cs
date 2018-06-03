@@ -7,7 +7,7 @@ public class Rope : MonoBehaviour {
 	public Rigidbody2D hook;
 	public HingeJoint2D otherHook;
 	// Use this for initialization
-	bool fired = false;
+	public bool fired = false;
 	void Start () {
 	//	GenerateLinks ();
 	}
