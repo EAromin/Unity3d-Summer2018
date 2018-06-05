@@ -26,11 +26,10 @@ public class PlayerControl : MonoBehaviour {
 		x =   Input.GetAxisRaw("Horizontal");
 
 
-		if (Input.GetKey ("space") && grounded) {
+		if (Input.GetButtonDown("Jump") && grounded) {
 			rb.velocity += new Vector2(0,jumpForce);
 			grounded = false;
-
-			if(x!= 0){
+		
 			if (arr.fired && arr.rb.constraints == RigidbodyConstraints2D.FreezeAll) {
 				arr.fired = false;
 				arr.rb.constraints = RigidbodyConstraints2D.FreezeRotation;
@@ -39,7 +38,7 @@ public class PlayerControl : MonoBehaviour {
 				foreach (Transform child in rope.transform)
 					Destroy (child.gameObject);
 				//arr.rb.velocity =  -(transform.up *arr.shootPower);
-				}}
+				}
 			}
 		if (x != 0)
 			rb.velocity += new Vector2 (x, 0);
@@ -59,7 +58,6 @@ public class PlayerControl : MonoBehaviour {
 			
 		}
 		rb.velocity = new Vector2 (Mathf.Clamp (rb.velocity.x, -speed, speed), rb.velocity.y);
-		Debug.Log (rb.velocity);
 
 	}
 
