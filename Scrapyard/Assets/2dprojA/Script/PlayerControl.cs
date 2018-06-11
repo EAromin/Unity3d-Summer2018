@@ -9,6 +9,7 @@ public class PlayerControl : MonoBehaviour {
 	public Rope rope;
 	public float jumpForce = 5f;
 	public bool grounded = true;
+
 	// Update is called once per frame
 
 	void Update(){
@@ -27,7 +28,7 @@ public class PlayerControl : MonoBehaviour {
 
 
 		if (Input.GetButtonDown("Jump") && grounded) {
-			rb.velocity += new Vector2(0,jumpForce);
+			rb.velocity += Vector2.up *jumpForce;
 			grounded = false;
 		
 			if (arr.fired && arr.rb.constraints == RigidbodyConstraints2D.FreezeAll) {
