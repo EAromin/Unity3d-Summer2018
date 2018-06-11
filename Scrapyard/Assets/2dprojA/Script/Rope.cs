@@ -38,13 +38,7 @@ public class Rope : MonoBehaviour {
 		for(int i =0; i < links.Length; i++)
 		{	if(links[i]!=null)
 			lr.SetPosition(i,links[i].transform.position);
-<<<<<<< HEAD
-<<<<<<< HEAD
 			else break;
-=======
->>>>>>> 47316ff6261a380fbe39b391607e31564cf1f08d
-=======
->>>>>>> 47316ff6261a380fbe39b391607e31564cf1f08d
 		}
 	}
 	void GenerateLinks(){

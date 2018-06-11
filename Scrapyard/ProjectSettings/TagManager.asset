@@ -9,13 +9,7 @@ TagManager:
   - Wall
   - LevelChunk
   - Spike
-<<<<<<< HEAD
-<<<<<<< HEAD
   - Enemy
-=======
->>>>>>> 47316ff6261a380fbe39b391607e31564cf1f08d
-=======
->>>>>>> 47316ff6261a380fbe39b391607e31564cf1f08d
   layers:
   - Default
   - TransparentFX
