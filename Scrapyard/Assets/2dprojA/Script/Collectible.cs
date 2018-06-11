@@ -11,14 +11,18 @@ public class Collectible : MonoBehaviour {
 	Vector2 target;
 	public Rigidbody2D rb;
 	private bool movingUp = true;
+<<<<<<< HEAD
 	private float rotationSpeed = 1.0f;
 	private bool touched = false;
 	private SpriteRenderer s_rend;
 	private Color spriteColor;
+=======
+>>>>>>> 47316ff6261a380fbe39b391607e31564cf1f08d
 	void Start () {
 		
 		topLimit = rb.transform.position.y+ offset;
 		bottomLimit = rb.transform.position.y-offset;
+<<<<<<< HEAD
 		s_rend = transform.gameObject.GetComponent<SpriteRenderer>();
 		spriteColor = s_rend.color;
 		
@@ -36,6 +40,11 @@ public class Collectible : MonoBehaviour {
 				spriteColor.a -= 0.1f;
 		s_rend.color = spriteColor;
 	}
+=======
+	}	
+	
+	// Update is called once per frame
+>>>>>>> 47316ff6261a380fbe39b391607e31564cf1f08d
 	void FixedUpdate () {
 		if(rb.transform.position.y > topLimit)
 			movingUp =false;
@@ -46,6 +55,7 @@ public class Collectible : MonoBehaviour {
 		else
 			rb.velocity =  Vector2.MoveTowards(rb.transform.position,Vector2.up,10f) * -animSpeed;
 
+<<<<<<< HEAD
 		rb.transform.Rotate(Vector2.up * rotationSpeed,Space.World);
 
 		if(spriteColor.a <0)
@@ -60,5 +70,9 @@ public class Collectible : MonoBehaviour {
 			topLimit+=5f;
 			animSpeed *=3;
 		}
+=======
+		rb.transform.Rotate(Vector2.up,Space.World);
+		Debug.Log(movingUp);
+>>>>>>> 47316ff6261a380fbe39b391607e31564cf1f08d
 	}
 }

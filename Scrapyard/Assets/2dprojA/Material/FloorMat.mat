@@ -7,21 +7,34 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: FloorMat
+<<<<<<< HEAD
   m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+=======
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+>>>>>>> 47316ff6261a380fbe39b391607e31564cf1f08d
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _ALPHATEST_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
+<<<<<<< HEAD
   m_CustomRenderQueue: -1
   stringTagMap: {}
+=======
+  m_CustomRenderQueue: 2450
+  stringTagMap:
+    RenderType: TransparentCutout
+>>>>>>> 47316ff6261a380fbe39b391607e31564cf1f08d
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+<<<<<<< HEAD
     - _AlphaTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+=======
+>>>>>>> 47316ff6261a380fbe39b391607e31564cf1f08d
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -63,12 +76,18 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+<<<<<<< HEAD
     - PixelSnap: 0
+=======
+>>>>>>> 47316ff6261a380fbe39b391607e31564cf1f08d
     - _BumpScale: 1
     - _Cutoff: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+<<<<<<< HEAD
     - _EnableExternalAlpha: 0
+=======
+>>>>>>> 47316ff6261a380fbe39b391607e31564cf1f08d
     - _GlossMapScale: 1
     - _Glossiness: 0.321
     - _GlossyReflections: 1
@@ -84,6 +103,9 @@ Material:
     m_Colors:
     - _Color: {r: 0.5471698, g: 0.3794055, b: 0.3794055, a: 1}
     - _EmissionColor: {r: 0.3301887, g: 0.1759968, b: 0.1759968, a: 1}
+<<<<<<< HEAD
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+=======
+>>>>>>> 47316ff6261a380fbe39b391607e31564cf1f08d
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
